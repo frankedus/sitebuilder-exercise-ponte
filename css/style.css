@@ -1,3 +1,247 @@
+/* ==========================================================================
+Reset CSS
+http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
+License: none (public domain)
+========================================================================== */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../vendor/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../vendor/fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../vendor/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+body h1, body h2, body h4 {
+  text-transform: uppercase;
+}
+body .page_header {
+  background-image: url("../images/background_image.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 580px;
+}
+body .header_nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 80px;
+}
+body .header_nav .logo {
+  float: left;
+  margin-top: 17px;
+}
+body .header_nav .nav_option {
+  font-size: 18px;
+  float: right;
+  height: 100%;
+  line-height: 80px;
+  margin-left: 10px;
+  white-space: nowrap;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+body .header_nav .nav_option:hover {
+  background-color: #0093d8;
+}
+body .header_nav .nav_option span, body .header_nav .nav_option .arrow_down {
+  display: inline-block;
+  vertical-align: middle;
+}
+body .header_nav .nav_option .arrow_down {
+  margin-left: 15px;
+}
+body .header_nav .jobs {
+  margin-left: 35px;
+}
+body .header_title {
+  margin-top: 230px;
+}
+body .header_title h1 {
+  font-size: 48px;
+}
+body .header_title p {
+  font-size: 24px;
+  margin: 15px 0 60px 0;
+}
+body .header_title a {
+  color: #0093d8;
+}
+body .page_body {
+  color: #414141;
+  padding: 50px 0;
+}
+body .page_body h2 {
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+body .page_body p, body .page_body ul {
+  font-size: 16px;
+  line-height: 22px;
+}
+body .page_body ul {
+  margin: 10px 0 25px 0;
+}
+body .page_body ul span {
+  font-weight: bold;
+}
+body .page_body li {
+  margin-bottom: 12px;
+}
+body .page_body a {
+  color: #0093d8;
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+}
+body .page_body .earth {
+  margin-top: 5px;
+  width: 100%;
+}
+body .page_body .text {
+  text-align: justify;
+}
 
 /*# sourceMappingURL=style.css.map */
