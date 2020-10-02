@@ -36,6 +36,25 @@ body {
 
     h4 { font-size: 24px; }
 
+    .link {
+        color: #0093d8;
+        border-bottom: 1px solid #0093d8;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: none;
+        }
+
+        &:focus {
+            outline: none;
+            text-decoration: none;
+        }
+    }
+
+    .display_none {
+        display: none;
+    }
+
     .page_header {
         background-image: url("../images/background_image.png");
         background-position: center;
@@ -47,6 +66,10 @@ body {
     .header_nav {
         background-color: rgb(0,0,0,0.5);
         height: 80px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
 
         .logo {
             float: left;
@@ -54,14 +77,15 @@ body {
         }
 
         .nav_option {
+            cursor: pointer;
             font-size: 18px;
             float: right;
             height: 100%;
             line-height: 80px;
             margin-left: 10px;
             white-space: nowrap;
-            padding: 0 15px;
             text-transform: uppercase;
+            transition: all 200ms linear;
 
             &:hover {
                 background-color: #0093d8;
@@ -72,7 +96,21 @@ body {
                 vertical-align: middle;
             }
 
-            .arrow_down { margin-left: 15px; }
+            span {
+                padding: 0 15px;
+            }
+
+            .arrow_down { margin-right: 15px; }
+
+            .dropdown_option {
+                border-top: 1px solid #66bee8;
+
+                p { margin-left: 15px; }
+
+                &:hover {
+                    background-color: #007bb5;
+                }
+            }
         }
 
         .jobs {
@@ -81,7 +119,9 @@ body {
     }
 
     .header_title {
-        margin-top: 230px;
+        h1 {
+            margin-top: 300px;
+        }
 
         p {
             font-size: 24px;
@@ -106,7 +146,8 @@ body {
         }
 
         ul {
-            margin: 10px 0 25px 0;
+            margin: 10px 0 25px 25px;
+            list-style-image: url('../images/arrow_blue.svg');
 
             span {
                 font-weight: bold;
@@ -118,10 +159,11 @@ body {
         }
 
         .link {
-            color: #0093d8;
+
             display: inline-block;
             float: right;
             margin-top: 10px;
+
         }
 
         .earth {
@@ -194,6 +236,7 @@ body {
 
             textarea {
                 height: 145px;
+                resize: none;
             }
 
             .form_row {
@@ -202,7 +245,7 @@ body {
                 &:last-of-type { margin-bottom: 0; }
             }
 
-            .number_of_character {
+            .character_counter {
                 color: #c8c8c8;
                 font-size: 12px;
                 margin: 5px 0 0 25px;
@@ -214,6 +257,7 @@ body {
                 border-radius: 3px;
                 float: right;
                 height: 50px;
+                outline: none;
                 text-transform: uppercase;
                 width: 135px;
 
@@ -228,6 +272,13 @@ body {
                     background-color: #0093d8;
                 }
             }
+        }
+
+        .all_rights {
+            border-top: 1px solid #575c64;
+            font-size: 14px;
+            margin-top: 25px;
+            padding-top: 30px;
         }
     }
 
