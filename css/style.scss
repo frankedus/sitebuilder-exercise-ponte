@@ -26,8 +26,15 @@
 body {
 
     font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
 
     h1, h2, h4 { text-transform: uppercase; }
+
+    h1 { font-size: 48px; }
+
+    h2 {  font-size: 34px; }
+
+    h4 { font-size: 24px; }
 
     .page_header {
         background-image: url("../images/background_image.png");
@@ -76,10 +83,6 @@ body {
     .header_title {
         margin-top: 230px;
 
-        h1 {
-            font-size: 48px;
-        }
-
         p {
             font-size: 24px;
             margin: 15px 0 60px 0;
@@ -93,14 +96,12 @@ body {
         padding: 50px 0;
 
         h2 {
-            font-size: 34px;
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             margin-bottom: 20px;
         }
 
         p, ul {
-            font-size: 16px;
             line-height: 22px;
         }
 
@@ -116,7 +117,7 @@ body {
             margin-bottom: 12px;
         }
 
-        a {
+        .link {
             color: #0093d8;
             display: inline-block;
             float: right;
@@ -130,6 +131,103 @@ body {
 
         .text {
             text-align: justify;
+        }
+    }
+
+    .our_partners {
+        margin-top: 80px;
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+
+            td {
+                border: 1px solid #caccce;
+                padding: 30px 0;
+                text-align: center;
+            }
+        }
+    }
+
+    footer {
+        background-color: #2d333d;
+        color: white;
+        padding: 25px 0 30px 0;
+
+        .text { margin: 20px 0 30px 0; }
+
+        .social_icon_container {
+            width: 53px;
+            height: 55px;
+            display: inline-block;
+            margin-right: 5px;
+            padding: 15px 0;
+            text-align: center;
+
+            img { width: 50%; }
+        }
+
+        .fb_icon { background-color: #3b5998; }
+
+        .linkedin_icon { background-color: #0097da; }
+
+        .twitter_icon { background-color: #00ccff; }
+
+        .contact_form {
+            margin-top: 20px;
+
+            input, textarea {
+                background-color: #252628;
+                border: 2px solid black;
+                padding: 20px;
+                width: 100%;
+
+                &::placeholder {
+                    color: #f5f5f5;
+                }
+
+                &:focus {
+                    outline: none;
+                    border-color: #007bb5;
+                }
+            }
+
+            textarea {
+                height: 145px;
+            }
+
+            .form_row {
+                margin-bottom: 20px;
+
+                &:last-of-type { margin-bottom: 0; }
+            }
+
+            .number_of_character {
+                color: #c8c8c8;
+                font-size: 12px;
+                margin: 5px 0 0 25px;
+            }
+
+            .send_btn {
+                background-color: #007bb5;
+                border: none;
+                border-radius: 3px;
+                float: right;
+                height: 50px;
+                text-transform: uppercase;
+                width: 135px;
+
+                span, img {
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+
+                img { margin-left: 20px; }
+
+                &:hover {
+                    background-color: #0093d8;
+                }
+            }
         }
     }
 

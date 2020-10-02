@@ -152,9 +152,19 @@ table {
 }
 body {
   font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
 }
 body h1, body h2, body h4 {
   text-transform: uppercase;
+}
+body h1 {
+  font-size: 48px;
+}
+body h2 {
+  font-size: 34px;
+}
+body h4 {
+  font-size: 24px;
 }
 body .page_header {
   background-image: url("../images/background_image.png");
@@ -197,9 +207,6 @@ body .header_nav .jobs {
 body .header_title {
   margin-top: 230px;
 }
-body .header_title h1 {
-  font-size: 48px;
-}
 body .header_title p {
   font-size: 24px;
   margin: 15px 0 60px 0;
@@ -212,13 +219,11 @@ body .page_body {
   padding: 50px 0;
 }
 body .page_body h2 {
-  font-size: 34px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
 }
 body .page_body p, body .page_body ul {
-  font-size: 16px;
   line-height: 22px;
 }
 body .page_body ul {
@@ -230,7 +235,7 @@ body .page_body ul span {
 body .page_body li {
   margin-bottom: 12px;
 }
-body .page_body a {
+body .page_body .link {
   color: #0093d8;
   display: inline-block;
   float: right;
@@ -242,6 +247,95 @@ body .page_body .earth {
 }
 body .page_body .text {
   text-align: justify;
+}
+body .our_partners {
+  margin-top: 80px;
+}
+body .our_partners table {
+  table-layout: fixed;
+  width: 100%;
+}
+body .our_partners table td {
+  border: 1px solid #caccce;
+  padding: 30px 0;
+  text-align: center;
+}
+body footer {
+  background-color: #2d333d;
+  color: white;
+  padding: 25px 0 30px 0;
+}
+body footer .text {
+  margin: 20px 0 30px 0;
+}
+body footer .social_icon_container {
+  width: 53px;
+  height: 55px;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 15px 0;
+  text-align: center;
+}
+body footer .social_icon_container img {
+  width: 50%;
+}
+body footer .fb_icon {
+  background-color: #3b5998;
+}
+body footer .linkedin_icon {
+  background-color: #0097da;
+}
+body footer .twitter_icon {
+  background-color: #00ccff;
+}
+body footer .contact_form {
+  margin-top: 20px;
+}
+body footer .contact_form input, body footer .contact_form textarea {
+  background-color: #252628;
+  border: 2px solid black;
+  padding: 20px;
+  width: 100%;
+}
+body footer .contact_form input::placeholder, body footer .contact_form textarea::placeholder {
+  color: #f5f5f5;
+}
+body footer .contact_form input:focus, body footer .contact_form textarea:focus {
+  outline: none;
+  border-color: #007bb5;
+}
+body footer .contact_form textarea {
+  height: 145px;
+}
+body footer .contact_form .form_row {
+  margin-bottom: 20px;
+}
+body footer .contact_form .form_row:last-of-type {
+  margin-bottom: 0;
+}
+body footer .contact_form .number_of_character {
+  color: #c8c8c8;
+  font-size: 12px;
+  margin: 5px 0 0 25px;
+}
+body footer .contact_form .send_btn {
+  background-color: #007bb5;
+  border: none;
+  border-radius: 3px;
+  float: right;
+  height: 50px;
+  text-transform: uppercase;
+  width: 135px;
+}
+body footer .contact_form .send_btn span, body footer .contact_form .send_btn img {
+  vertical-align: middle;
+  display: inline-block;
+}
+body footer .contact_form .send_btn img {
+  margin-left: 20px;
+}
+body footer .contact_form .send_btn:hover {
+  background-color: #0093d8;
 }
 
 /*# sourceMappingURL=style.css.map */
