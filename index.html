@@ -16,7 +16,7 @@
                         <div class="hidden-xs col-md-12">
                             <div class="desktop_nav">
                                 <ul>
-                                    <li class="logo"><img src="images/top_logo.svg"></li>
+                                    <li class="logo"><a href="#"><img src="images/top_logo.svg"></a></li>
                                     <li class="nav_option jobs"><span>Jobs</span></li>
                                     <li class="nav_option"><span>Works</span></li>
                                     <li class="nav_option dropdown_holder"><span>Services</span><img class="arrow_down" src="images/arrow_down.svg">
@@ -146,16 +146,16 @@
                             <div class="contact_form">
                                 <form>
                                     <div class="form_row">
-                                        <!--                                    <label>Name</label>-->
-                                        <input type="text" placeholder="Name">
+                                        <label><span>Name</span></label>
+                                        <input type="text" placeholder="Name" data-placeholder="Name">
                                     </div>
                                     <div class="form_row">
-                                        <!--                                    <label>E-mail</label>-->
-                                        <input type="text" placeholder="E-mail">
+                                        <label><span>E-mail</span></label>
+                                        <input type="email" placeholder="E-mail" data-placeholder="E-mail">
                                     </div>
                                     <div class="form_row">
-                                        <!--                                    <label>Message</label>-->
-                                        <textarea class="character_textarea" placeholder="Message" maxlength="200"></textarea>
+                                        <label><span>Message</span></label>
+                                        <textarea class="message_textarea" placeholder="Message" data-placeholder="Message" maxlength="200"></textarea>
                                         <p class="character_counter">maximum 200 karakter - <span class="remain_character">200</span> karakter maradt</p>
                                     </div>
                                     <button class="send_btn">

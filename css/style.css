@@ -329,7 +329,7 @@ body footer .twitter_icon {
   background-color: #00ccff;
 }
 body footer .contact_form {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 body footer .contact_form input, body footer .contact_form textarea {
   background-color: #252628;
@@ -348,8 +348,16 @@ body footer .contact_form textarea {
   height: 145px;
   resize: none;
 }
+body footer .contact_form label {
+  height: 25px;
+  display: block;
+  margin-left: 20px;
+}
+body footer .contact_form label span {
+  display: none;
+}
 body footer .contact_form .form_row {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 body footer .contact_form .form_row:last-of-type {
   margin-bottom: 0;

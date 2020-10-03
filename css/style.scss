@@ -222,7 +222,7 @@ body {
         .twitter_icon { background-color: #00ccff; }
 
         .contact_form {
-            margin-top: 20px;
+            margin-top: 5px;
 
             input, textarea {
                 background-color: #252628;
@@ -245,8 +245,18 @@ body {
                 resize: none;
             }
 
+            label {
+                height: 25px;
+                display: block;
+                margin-left: 20px;
+
+                span {
+                    display: none;
+                }
+            }
+
             .form_row {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
 
                 &:last-of-type { margin-bottom: 0; }
             }
@@ -259,7 +269,7 @@ body {
 
             .send_btn {
                 background-color: #007bb5;
-                border: none;
+                border: 0;
                 border-radius: 3px;
                 float: right;
                 height: 50px;

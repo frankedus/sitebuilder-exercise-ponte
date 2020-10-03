@@ -2,6 +2,7 @@ var body = $('body');
 
 $(document).ready(function() {
     dropdownActions();
+    showLabel();
     countCharacters();
 });
 
@@ -15,13 +16,22 @@ function dropdownActions() {
     });
 }
 
+function showLabel() {
+    $('input, textarea').focus(function() {
+        $(this).parent().find('label span').fadeIn(200);
+        $(this).attr('placeholder', '');
+    });
+    $('input, textarea').focusout(function() {
+        $(this).parent().find('label span').fadeOut(200);
+        $(this).attr('placeholder', $(this).attr('data-placeholder'));
+    });
+}
 
-function countCharacters () {
-
+function countCharacters() {
     let maxCharacter = 200;
 
-    $('.character_textarea').on('keyup', function() {
-        let numberOfCharacters = $('.character_textarea').val().length;
+    $('.message_textarea').on('keyup', function() {
+        let numberOfCharacters = $('.message_textarea').val().length;
         $('.remain_character').html(maxCharacter - numberOfCharacters);
 
     });
