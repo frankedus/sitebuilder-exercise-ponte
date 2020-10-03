@@ -1,0 +1,8 @@
+<svg id="menu_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="31" viewBox="0 0 36 31">
+  <defs>
+    <image id="image" width="36" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAFCAYAAAAt8E4LAAAAP0lEQVQokc3SMQqAMBBE0ZdopeD9b2gvpIwrFiFHyP4TPJgpEXHjxGttFW3HhWMxZrTVHI5ZOtA/2YOe4kO0D/I1CfFaCyf8AAAAAElFTkSuQmCC"/>
+  </defs>
+  <use xlink:href="#image"/>
+  <use id="Layer_205_copy" data-name="Layer 205 copy" y="13" xlink:href="#image"/>
+  <use id="Layer_205_copy_2" data-name="Layer 205 copy 2" y="26" xlink:href="#image"/>
+</svg>

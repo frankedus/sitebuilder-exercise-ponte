@@ -12,22 +12,55 @@
         <div class="page_header">
             <div class="header_nav">
                 <div class="container">
-                    <ul>
-                        <li class="logo"><img src="images/top_logo.png"></li>
-                        <li class="nav_option jobs"><span>Jobs</span></li>
-                        <li class="nav_option"><span>Works</span></li>
-                        <li class="nav_option dropdown_holder"><span>Services</span><img class="arrow_down" src="images/arrow_down.svg">
-                            <div class="menu_dropdown display_none">
-                                <div class="dropdown_option">
-                                    <p>Cms</p>
+                    <div class="row">
+                        <div class="hidden-xs col-md-12">
+                            <div class="desktop_nav">
+                                <ul>
+                                    <li class="logo"><img src="images/top_logo.svg"></li>
+                                    <li class="nav_option jobs"><span>Jobs</span></li>
+                                    <li class="nav_option"><span>Works</span></li>
+                                    <li class="nav_option dropdown_holder"><span>Services</span><img class="arrow_down" src="images/arrow_down.svg">
+                                        <div class="menu_dropdown display_none">
+                                            <div class="dropdown_option">
+                                                <p>Cms</p>
+                                            </div>
+                                            <div class="dropdown_option">
+                                                <p>Portal</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav_option"><span>About</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                            <div class="mobile_nav">
+                                <div class="logo_icon_container">
+                                    <img src="images/top_logo.svg">
                                 </div>
-                                <div class="dropdown_option">
-                                    <p>Portal</p>
+                                <div class="menu_icon_container">
+                                    <img src="images/menu_icon.svg">
+                                </div>
+                                <div class="mobile_submenu display_none">
+                                    <ul>
+                                        <li class="nav_option"><span>About</span></li>
+                                        <li class="nav_option dropdown_holder"><span>Services</span>
+                                            <div class="menu_dropdown display_none">
+                                                <div class="dropdown_option">
+                                                    <p>Cms</p>
+                                                </div>
+                                                <div class="dropdown_option">
+                                                    <p>Portal</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav_option"><span>Works</span></li>
+                                        <li class="nav_option"><span>Jobs</span></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </li>
-                        <li class="nav_option"><span>About</span></li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -47,41 +80,43 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
-                        <h2>Introduction</h2>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <p class="text">WCAG 2.0 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See Web Content Accessibility Guidelines (WCAG) Overview for an introduction and links to WCAG technical and educational material.</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6">
-                                <img class="earth" src="images/image.png">
-                            </div>
+                        <div class="introduction">
+                            <h2>Introduction</h2>
+                            <img class="earth" src="images/image.png">
+                            <p class="text">WCAG 2.0 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See Web Content Accessibility Guidelines (WCAG) Overview for an introduction and links to WCAG technical and educational material.</p>
+                            <p class="text">WCAG 2.0 succeeds Web Content Accessibility Guidelines 1.0 [WCAG10], which was published as a W3C Recommendation May 1999. Although it is possible to conform either to WCAG 1.0 or to WCAG 2.0 (or both)</p>
+                            <a class="link" href="#">Tovább</a>
                         </div>
-                        <p class="text">WCAG 2.0 succeeds Web Content Accessibility Guidelines 1.0 [WCAG10], which was published as a W3C Recommendation May 1999. Although it is possible to conform either to WCAG 1.0 or to WCAG 2.0 (or both)</p>
-                        <a class="link" href="#">Tovább</a>
                     </div>
                     <div class="col-sm-6 col-xs-12">
-                        <h2>WCAG 2.0 Layers of Guidance</h2>
-                        <p class="text">WCAG 2.0 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See Web Content Accessibility Guidelines (WCAG)</p>
-                        <ul>
-                            <li><span>Principles</span> - At the top are four principles that provide the for Web accessibility</li>
-                            <li><span>Guideline</span> - Under the principles are guidelines</li>
-                            <li><span>Sufficient and Advisory Techniques</span> - For each of the guidelines and success criteria in the WCAG 2.0 document itself</li>
-                        </ul>
-                        <p class="text">WCAG 2.0 succeeds Web Content Accessibility Guidelines 1.0 [WCAG10], which was published as a W3C Recommendation May 1999. Guidance about satisfying the success criteria in specific technologies.</p>
-                        <a class="link" href="#">Tovább</a>
+                        <div class="guidance">
+                            <h2>WCAG 2.0 Layers of Guidance</h2>
+                            <p class="text">WCAG 2.0 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See Web Content Accessibility Guidelines (WCAG)</p>
+                            <ul>
+                                <li><span>Principles</span> - At the top are four principles that provide the for Web accessibility</li>
+                                <li><span>Guideline</span> - Under the principles are guidelines</li>
+                                <li><span>Sufficient and Advisory Techniques</span> - For each of the guidelines and success criteria in the WCAG 2.0 document itself</li>
+                            </ul>
+                            <p class="text">WCAG 2.0 succeeds Web Content Accessibility Guidelines 1.0 [WCAG10], which was published as a W3C Recommendation May 1999. Guidance about satisfying the success criteria in specific technologies.</p>
+                            <a class="link" href="#">Tovább</a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="our_partners">
                             <h2>Our partners</h2>
-                            <table>
-                                <tr>
-                                    <td><a href="https://developer.mozilla.org/en-US/" target="_blank"><img src="images/css_logo.png"></a></td>
-                                    <td><a href="https://www.wikipedia.org/" target="_blank"><img src="images/html_logo.png"></a></td>
-                                    <td><a href="https://www.udemy.com/" target="_blank"><img src="images/java_logo.png"></a></td>
-                                </tr>
-                            </table>
+                            <div class="partners_container">
+                                <div class="first_block block">
+                                    <a href="https://developer.mozilla.org/en-US/" target="_blank"><img src="images/css_logo.png"></a>
+                                </div>
+                                <div class="middle_block block">
+                                    <a href="https://www.wikipedia.org/" target="_blank"><img src="images/html_logo.png"></a>
+                                </div>
+                                <div class="last_block block">
+                                    <a href="https://www.udemy.com/" target="_blank"><img src="images/java_logo.png"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,27 +141,29 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-sm-offset-1">
-                        <h4>Contact form</h4>
-                        <div class="contact_form">
-                            <form>
-                                <div class="form_row">
-<!--                                    <label>Name</label>-->
-                                    <input type="text" placeholder="Name">
-                                </div>
-                                <div class="form_row">
-<!--                                    <label>E-mail</label>-->
-                                    <input type="text" placeholder="E-mail">
-                                </div>
-                                <div class="form_row">
-<!--                                    <label>Message</label>-->
-                                    <textarea class="character_textarea" placeholder="Message" maxlength="200"></textarea>
-                                    <p class="character_counter">maximum 200 karakter - <span class="remain_character">200</span> karakter maradt</p>
-                                </div>
-                                <button class="send_btn">
-                                    <span>Send</span>
-                                    <img src="images/submit-icon.svg">
-                                </button>
-                            </form>
+                        <div class="contact_section">
+                            <h4>Contact form</h4>
+                            <div class="contact_form">
+                                <form>
+                                    <div class="form_row">
+                                        <!--                                    <label>Name</label>-->
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="form_row">
+                                        <!--                                    <label>E-mail</label>-->
+                                        <input type="text" placeholder="E-mail">
+                                    </div>
+                                    <div class="form_row">
+                                        <!--                                    <label>Message</label>-->
+                                        <textarea class="character_textarea" placeholder="Message" maxlength="200"></textarea>
+                                        <p class="character_counter">maximum 200 karakter - <span class="remain_character">200</span> karakter maradt</p>
+                                    </div>
+                                    <button class="send_btn">
+                                        <span>Send</span>
+                                        <img src="images/submit-icon.svg">
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -274,8 +274,9 @@ body .page_body .link {
   margin-top: 10px;
 }
 body .page_body .earth {
-  margin-top: 5px;
-  width: 100%;
+  margin: 5px 0 20px 30px;
+  width: 255px;
+  float: right;
 }
 body .page_body .text {
   text-align: justify;
@@ -283,14 +284,21 @@ body .page_body .text {
 body .our_partners {
   margin-top: 80px;
 }
-body .our_partners table {
-  table-layout: fixed;
-  width: 100%;
-}
-body .our_partners table td {
+body .our_partners .partners_container {
   border: 1px solid #caccce;
-  padding: 30px 0;
+}
+body .our_partners .partners_container .block {
+  display: inline-block;
   text-align: center;
+  padding: 30px 0;
+}
+body .our_partners .partners_container .middle_block {
+  width: 38%;
+  border-left: 1px solid #caccce;
+  border-right: 1px solid #caccce;
+}
+body .our_partners .partners_container .first_block, body .our_partners .partners_container .last_block {
+  width: 30%;
 }
 body footer {
   background-color: #2d333d;
@@ -376,6 +384,73 @@ body footer .all_rights {
   font-size: 14px;
   margin-top: 25px;
   padding-top: 30px;
+}
+
+/* ===========================================================================
+   Media Queries
+ =========================================================================== */
+@media screen and (max-width: 767px) {
+  body .header_nav {
+    height: 100px;
+  }
+  body .header_nav .mobile_nav {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  body .header_nav .mobile_nav .logo_icon_container, body .header_nav .mobile_nav .menu_icon_container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  body .header_nav .mobile_nav .logo_icon_container {
+    float: left;
+  }
+  body .header_nav .mobile_submenu {
+    background-color: #0093d8;
+    position: absolute;
+    top: 100px;
+    right: -20px;
+    width: 105%;
+  }
+  body .header_nav .nav_option {
+    float: none;
+    height: auto;
+    margin-left: 0;
+  }
+  body .header_title h1 {
+    margin-top: 210px;
+  }
+  body .introduction, body .guidance {
+    margin-bottom: 75px;
+  }
+  body .our_partners {
+    margin-top: 0;
+  }
+  body .our_partners .partners_container {
+    width: 295px;
+    margin: 50px auto 0 auto;
+  }
+  body .our_partners .partners_container .block {
+    display: block;
+    width: 100%;
+    padding: 80px 0;
+  }
+  body .our_partners .partners_container .middle_block {
+    border: 0;
+    border-top: 1px solid #caccce;
+    border-bottom: 1px solid #caccce;
+  }
+  body footer .contact_section {
+    margin-top: 80px;
+  }
+  body footer .contact_form .form_row {
+    margin-bottom: 30px;
+  }
+  body footer .send_btn {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
